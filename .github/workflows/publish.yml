@@ -1,8 +1,19 @@
 name: 'publish'
 on:
-  push:
-    branches:
-      - release
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Environment to deploy to
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
+      version:
+        description: Version to deploy
+        required: false
+        type: string
 jobs:
   publish-tauri:
     permissions:
