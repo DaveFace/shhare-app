@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🖥️ Run Shhare",
+      "type": "shell",
+      "command": "bun run tauri dev"
+    },
+    {
+      "label": "📦 Build Shhare",
+      "type": "shell",
+      "command": "bun run tauri build"
+    }
+  ]
+}

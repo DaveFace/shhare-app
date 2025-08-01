@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "daisyui" {
+  exclude: rootscrollgutter, rootcolor;
+  themes: nord --default, dim --prefersdark;
+}
